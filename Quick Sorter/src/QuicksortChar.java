@@ -1,5 +1,4 @@
-public class Quicksort
-
+public class QuicksortChar
 	{
 	static void qsort(char items[])
 		{
@@ -9,20 +8,20 @@ public class Quicksort
 	private static void qs(char items[], int left, int right)
 		{
 		int i, j;
-		char x, y;
+		char pivot, y;
 		
 		i = left;
 		j = right;
-		x = items [(left + right) / 2];
+		pivot = items [(left + right) / 2];
 		
 		do
 			{
-			while ((items [i] < x) && (i < right))
+			while ((items [i] < pivot) && (i < right))
 				{
 				i++;
 				}
 			
-			while ((x < items [j]) && (j > left))
+			while ((pivot < items [j]) && (j > left))
 				{
 				j--;
 				}
